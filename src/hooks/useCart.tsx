@@ -43,8 +43,6 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
   useEffect(() => {
     if (cartPreviousValue !== cart) {
       localStorage.setItem('@RocketShoes:cart', JSON.stringify(cart))
-      // localStorage.setItem('@RocketShoes:cart', JSON.stringify(updatedCart))
-      // localStorage.setItem('@RocketShoes:cart', JSON.stringify(updatedCart))
     }
   }, [cart, cartPreviousValue]);
 
